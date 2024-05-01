@@ -1,0 +1,7 @@
+---
+- name: Ping the host
+  hosts: app_host 
+  gather_facts: false 
+  tasks:
+    - name: Check the user 
+      command: whoami
